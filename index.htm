@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f53960dd38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title-calculator">Kalkulator prąd jednofazowy</h1>
+        <div class="style-mode">
+            
+        </div>
+    </header>
+
+    <section class="option-cal">
+        <!-- <div class="option-calculator option-s">s</div>
+        <div class="option-calculator option-q">q</div>
+        <div class="option-calculator option-i">i</div>
+        <div class="option-calculator option-ir">i <span>r</span></div>
+        <div class="option-calculator option-il">i <span>l</span></div> -->
+
+        <div class="option-calculator open-all-option">Kliknij aby zobaczyć wszystkie jednostki do policzenia</div>
+    </section>
+    <div class="all-option">
+        <div class="title-section">
+            <h2>Jednostki które możesz obliczyć</h2>
+        </div>
+        <div class="extra-option option-s">s</div>
+        <div class="extra-option option-q">q</div>
+        <div class="extra-option option-i">i</div>
+        <div class="extra-option option-ir">i<span>r</span></div>
+        <div class="extra-option option-il">i<span>l</span></div>
+        <div class="extra-option cosinus">cos<span>ᵠ</span></div>
+        <div class="extra-option option-xc">X<span>C</span></div>
+        <div class="extra-option option-xl">X<span>L</span></div>
+        <div class="extra-option option-r">R</div>
+        <div class="close extra-option ">Zamknij okno<i class="fa-solid fa-circle-xmark"></i></div>
+    </div>
+
+
+    <!-- calculation S -->
+    <section class="cal calculator-s">
+        <h2 class="title-s">Oblicz S</h2>
+        <p class="formula">S = U * I</p>
+        <label for="">U:</label>
+        <input class="input-first-s" type="number" placeholder="Podaj wartość U">
+        <label for="">I:</label>
+        <input class="input-second-s" type="number" placeholder="Podaj wartość I">
+
+        <button class="send-s">Oblicz</button>
+        <p class="error-s"></p>
+        <p class="data-s"></p>
+        <p class="count-s"></p>
+        <p class="result-s"></p>
+    </section>
+
+    <!-- calculation Q -->
+    <section class="calculator-q">
+        <h2 class="title-q">Oblicz Q</h2>
+        <p class="formula">Q = ^S<sup>2</sup> - P<sup>2</sup></p>
+        <label for="">S:</label>
+        <input class="input-first-q" type="number" placeholder="Podaj wartość S">
+        <label for="">P:</label>
+        <input class="input-second-q" type="number" placeholder="Podaj wartość P">
+
+        <button class="send-q">Oblicz</button>
+        <p class="error-q"></p>
+        <p class="data-q"></p>
+        <p class="count-q"></p>
+        <p class="result-q"></p>
+    </section>
+
+    <!-- calculation I -->
+
+    <section class="calculator-i">
+        <h2 class="title-i">Oblicz I</h2>
+        <p class="formula">I = P / U * cosᵠ</p>
+        <label for="">P:</label>
+        <input class="input-first-i" type="number" placeholder="Podaj wartość P">
+        <label for="">U:</label>
+        <input class="input-second-i" type="number" placeholder="Podaj wartość U">
+        <label for="">cosᵠ:</label>
+        <input class="input-thirst-i" type="number" placeholder="Podaj wartość cosᵠ">
+
+        <button class="send-i">Oblicz</button>
+        <p class="error-i"></p>
+        <p class="data-i"></p>
+        <p class="count-i"></p>
+        <p class="result-i"></p>
+    </section>
+
+    <!-- calculation Ir -->
+
+    <section class="calculator-ir">
+        <h2 class="title-ir">Oblicz I<span>R</span></h2>
+        <p class="formula">I<span>R</span> = cosᵠ * I</p>
+        <label for="">cosᵠ:</label>
+        <input class="input-first-ir" type="number" placeholder="Podaj wartość cosᵠ">
+        <label for="">I:</label>
+        <input class="input-second-ir" type="number" placeholder="Podaj wartość I">
+
+        <button class="send-ir">Oblicz</button>
+        <p class="error-ir"></p>
+        <p class="data-ir"></p>
+        <p class="count-ir"></p>
+        <p class="result-ir"></p>
+    </section>
+
+    <!-- calculation Il -->
+
+    <section class="calculator-il">
+        <h2 class="title-il">Oblicz I<span>L</span></h2>
+        <p class="formula">I<span>L</span> = ^I<sup>2</sup> - I<span>R</span><sup>2</sup></p>
+        <label for="">I:</label>
+        <input class="input-first-il" type="number" placeholder="Podaj wartość I">
+        <label for="">I:</label>
+        <input class="input-second-il" type="number" placeholder="Podaj wartość Ir">
+
+        <button class="send-il">Oblicz</button>
+        <p class="error-il"></p>
+        <p class="data-il"></p>
+        <p class="count-il"></p>
+        <p class="result-il"></p>
+    </section>
+
+    <!-- calculation cos fi -->
+    <!-- <section class="calculator-cos">
+        <h2 class="title-cos cosinus">cos<span>ᵠ</span></h2>
+        <p class="formula">I<span>L</span> = ^I<sup>2</sup> - I<span>R</span><sup>2</sup></p>
+        <label for="">I:</label>
+        <input class="input-first-cos" type="number" placeholder="Podaj wartość I">
+        <label for="">I:</label>
+        <input class="input-second-cos" type="number" placeholder="Podaj wartość Ir">
+
+        <button class="send-cos">Oblicz</button>
+        <p class="error-cos"></p>
+        <p class="data-cos"></p>
+        <p class="count-cos"></p>
+        <p class="result-cos"></p>
+    </section> -->
+
+    <!-- calculation Xc -->
+
+    <section class="calculator-xc">
+        <h2 class="title-xc">X<span>C</span></h2>
+        <p class="formula">X<span>C</span> = ^Z<sup>2</sup> - R<sup>2</sup></p>
+        <label for="">Z:</label>
+        <input class="input-first-xc" type="number" placeholder="Podaj wartość Z">
+        <label for="">R:</label>
+        <input class="input-second-xc" type="number" placeholder="Podaj wartość R">
+
+        <button class="send-xc">Oblicz</button>
+        <p class="error-xc"></p>
+        <p class="data-xc"></p>
+        <p class="count-xc"></p>
+        <p class="result-xc"></p>
+    </section>
+
+
+
+
+
+
+    <!-- <footer class="footer">
+        <p>© Adam Kuskowski 2023</p>
+        <div class="link-web-master">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer> -->
+
+    <script src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
